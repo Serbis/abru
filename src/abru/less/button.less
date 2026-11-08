@@ -1,0 +1,29 @@
+@import "./abru";
+
+.abru-button {
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 15px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+.abru-button-default  {
+  .abru-button;
+
+  background-color: @primary-color;
+  &:hover {
+    background-color: @accent-color;
+  }
+
+  &:active {
+    background-color: @light-primary-color;
+  }
+  p {
+    color: @text-color;
+  }
+}

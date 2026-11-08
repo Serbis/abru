@@ -1,0 +1,21 @@
+@import "./abru";
+
+.abru-text_edit {
+  border: none;
+
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.abru-text_edit-default  {
+  .abru-text_edit;
+
+  border-bottom: 1px solid @divider-color;
+
+  &:focus {
+    border-bottom: 2px solid @primary-color;
+  }
+}
